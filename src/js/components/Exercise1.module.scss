@@ -1,0 +1,57 @@
+.exercise1 {
+  color: #555555;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 900px;
+  
+  .container {
+    align-items: center;
+    display: flex;
+
+    .testimonial {
+      display: flex;
+      flex-flow: column wrap;
+      max-width: 600px;
+
+      p {
+        font-size: 18px;
+        line-height: 27px;
+        padding-left: 50px;
+      }
+    
+      span {
+        font-weight: bold;
+        padding-left: 50px;
+      }
+
+      &:before {
+        background: none repeat scroll 0 0 rgba(255, 108, 1, 1);
+        border-radius: 50% 50% 50% 50%;
+        color: #fff;
+        content: "\201C";
+        font-family: 'icons';
+        font-size: 53px;
+        height: 41px;
+        line-height: 64px;
+        // padding-left: 2px;
+        position: absolute;
+        text-align: center;
+        width: 41px;
+      }
+    }
+  
+    a {
+      align-items: center;
+      background: #00a2e1;
+      border-radius: 3px;
+      color: #fff;
+      display: flex;
+      height: 63px;
+      justify-content: center;
+      text-transform: uppercase;
+      width: 189px;
+    }
+  }
+}

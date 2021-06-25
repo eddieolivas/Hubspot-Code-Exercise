@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Exercise1 from './js/components/Exercise1';
+
 const App = () => {
   return (
     <>
@@ -7,15 +9,7 @@ const App = () => {
         <h2>Exercise 1 - Testimonial Block</h2>
       </div>
 
-      <div>
-        <div>
-          <div>
-            <p>Gingerbread tart cupcake cake muffin cookie liquorice tiramisu. Toffee cupcake cake cake croissant icing carrot cake cookie. Dessert chocolate bar apple pie sesame snaps liquorice carrot cake cookie danish.</p>
-            <span>Indiana Jones, Archaeologist</span>
-          </div>
-          <a>Tell Me More</a>
-        </div>
-      </div>
+      <Exercise1 />
 
       <div class="exercise-header">
         <h2>Exercise 2 - Filterable Content</h2>
