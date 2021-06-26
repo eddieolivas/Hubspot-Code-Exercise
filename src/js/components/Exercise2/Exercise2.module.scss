@@ -22,28 +22,9 @@
         border: 1px solid #e3e4e3;
         padding: 10px;
       }
-    }
-  }
 
-  .mediaItems {
-    color: #4c4b55;
-    display: grid;
-    font-weight: bold;
-    gap: 1em;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 1em;
-
-    .mediaItem {
-      img {
-        width: 100%;
-      }
-
-      .itemTitle {
-        font-size: 1.2em;
-      }
-
-      .genre {
-        text-transform: capitalize;
+      .clearFilters {
+        text-transform: uppercase;
       }
     }
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Exercise1 from './js/components/Exercise1';
-import Exercise2 from './js/components/Exercise2';
+import Exercise2 from './js/components/Exercise2/Exercise2';
 
 const App = () => {
   return (
