@@ -32,13 +32,19 @@
       }
 
       .rightSide {
+        max-width: 250px;
         text-align: right;
+        width: 100%;
 
         input[type=text] {
           border: 1px solid #e3e4e3;
           margin-bottom: 20px;
           padding: 10px;
-          width: 85%;
+          width: 80%;
+
+          @media screen and (min-width: 767px) {
+            width: 85%;
+          }
         }
 
         button {
