@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import MultiSelect from "react-multi-select-component";
 import MediaItems from "./MediaItems";
-import styles from './Exercise2.module.scss';
+import * as style from './Exercise2.module.scss';
 import search from 'url:../../../assets/images/search.png';
 import { years, genres } from "./multiSelectValues";
 
@@ -93,12 +93,12 @@ const Exercise2 = () => {
   };
 
   return (
-    <div className={styles.exercise2}>
-      <header className={styles.header}>
+    <div className={style.exercise2}>
+      <header className={style.header}>
         <form>
-          <div className={styles.leftSide}>
+          <div className={style.leftSide}>
             <MultiSelect
-              className={styles.multiSelect}
+              className={style.multiSelect}
               disableSearch={true}
               hasSelectAll={false}
               options={genres}
@@ -109,7 +109,7 @@ const Exercise2 = () => {
             />
 
             <MultiSelect
-              className={styles.multiSelect}
+              className={style.multiSelect}
               disableSearch={true}
               hasSelectAll={false}
               options={years}
@@ -119,7 +119,7 @@ const Exercise2 = () => {
               valueRenderer={() => valueRenderer('Year')}
             />
             
-            <fieldset className={styles.radioButtons}>
+            <fieldset className={style.radioButtons}>
               <legend style={{display: 'none'}}>Choose media type</legend>
               <input 
                 type="radio" 
@@ -142,18 +142,18 @@ const Exercise2 = () => {
             </fieldset>
           </div>
 
-          <div className={styles.rightSide}>
-            <div className={styles.search}>
+          <div className={style.rightSide}>
+            <div className={style.search}>
               <label htmlFor="search" style={{display: 'none'}}>Search</label>
               <input 
                 id="search"
                 value={searchTitle}
                 onChange={searchTitleChangeHandler}
-                className={styles.searchInput} type="text" />
-              <button className={styles.searchButton} type="submit" onClick={(e) => e.preventDefault()}><img alt="Search icon" src={search} /></button>
+                className={style.searchInput} type="text" />
+              <button className={style.searchButton} type="submit" onClick={(e) => e.preventDefault()}><img alt="Search icon" src={search} /></button>
             </div>
 
-            <a className={styles.clearFilters} href="" onClick={clearFilterHandler}>Clear Filters</a>
+            <a className={style.clearFilters} href="" onClick={clearFilterHandler}>Clear Filters</a>
           </div>
         </form>
       </header>

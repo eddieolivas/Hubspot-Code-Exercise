@@ -10,6 +10,8 @@ I would refactor the main filter function for exercise 2 when typing in the sear
 
 I would find a better solution to a media item's photo not loading. I loaded a "not found" image, but there is still a 404 in the console. I would conditionally render the image tag if the URL of the photo returned a 404.
 
+I would add a message if no media items match your filters.
+
 ## How did you deviate from the directions, if at all, and why?
 
 _your answer here_
