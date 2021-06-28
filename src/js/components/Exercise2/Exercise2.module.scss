@@ -26,8 +26,12 @@
           width: 100%;
         }
 
-        label {
-          margin-right: 10px;
+        fieldset {
+          border: none;
+
+          label {
+            margin-right: 10px;
+          }
         }
       }
 

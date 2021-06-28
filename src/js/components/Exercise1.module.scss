@@ -1,3 +1,6 @@
+$orange: rgba(255, 108, 1, 1);
+$circle: 50% 50% 50% 50%;
+
 .exercise1 {
   color: #555555;
   display: flex;
@@ -17,7 +20,7 @@
     }
 
     .testimonial {
-      border-left: 2px solid rgba(255, 108, 1, 1);
+      border-left: 2px solid $orange;
       display: flex;
       flex-flow: column wrap;
       max-width: 600px;
@@ -35,8 +38,8 @@
       }
 
       &:before {
-        background: none repeat scroll 0 0 rgba(255, 108, 1, 1);
-        border-radius: 50% 50% 50% 50%;
+        background: none repeat scroll 0 0 $orange;
+        border-radius: $circle;
         box-shadow: 0 3px 0 #fff;
         color: #fff;
         content: "\201C";
@@ -51,8 +54,8 @@
       }
 
       &:after {
-        background: none repeat scroll 0 0 rgba(255, 108, 1, 1);
-        border-radius: 50% 50% 50% 50%;
+        background: none repeat scroll 0 0 $orange;
+        border-radius: $circle;
         content: "";
         height: 10px;
         margin-top: -12px;

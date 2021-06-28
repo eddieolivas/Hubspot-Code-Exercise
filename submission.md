@@ -2,9 +2,13 @@
 
 These notes will be read by HubSpot developers. Drop us a line!
 
+Perhaps we should use blockquote on the testimonial in exercise 1.
+
 ## Given more time, what would you have done differently?
 
-_your answer here_
+I would refactor the main filter function for exercise 2 when typing in the search field. Right now, the filter function runs on every keystroke. If there were millions of media items, this would be too expensive. I would use setTimeout when typing in the search field to ensure the user stopped typing before running the filter function again.
+
+I would find a better solution to a media item's photo not loading. I loaded a "not found" image, but there is still a 404 in the console. I would conditionally render the image tag if the URL of the photo returned a 404.
 
 ## How did you deviate from the directions, if at all, and why?
 
@@ -12,4 +16,4 @@ _your answer here_
 
 ## Is there anything else you'd like to let us know?
 
-_your answer here_
+This was really fun! I ran the page through the Wave Tool to fix all of the accessibility issues. The only warning left was that the page does not contain an H1.
