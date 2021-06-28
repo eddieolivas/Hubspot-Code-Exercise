@@ -15,10 +15,14 @@
       justify-content: space-between;
 
       .leftSide {
-        max-width: 450px;
-        width: 100%;
         display: flex;
         flex-flow: row wrap;
+        max-width: 450px;
+        width: 50%;
+
+        @media screen and (min-width: 960px) {
+          width: 100%;
+        }
 
         .multiSelect {
           margin: 0 20px 20px 0;
@@ -39,7 +43,6 @@
       .rightSide {
         max-width: 250px;
         text-align: right;
-        width: 100%;
 
         input[type=text] {
           border: 1px solid #e3e4e3;
