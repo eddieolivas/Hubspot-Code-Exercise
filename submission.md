@@ -1,5 +1,7 @@
 # Submission Notes
 
+The page is live here: https://eddies-hubspot-exercise.netlify.app/
+
 These notes will be read by HubSpot developers. Drop us a line!
 
 Perhaps we should use blockquote on the testimonial in exercise 1.
