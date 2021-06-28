@@ -24,4 +24,6 @@ _your answer here_
 
 This was really fun! I ran the page through the Wave Tool to fix all of the accessibility issues. The only warning left was that the page does not contain an H1 tag which I'm sure is fine for this purpose. 
 
+I also, ran the page through BrowserStack to check compatibility in the browsers you listed.
+
 Also, the exercise headings, the testimonial button, and the clear filters link give a "very low contrast" accessibility error. Apparently, that blue on white is too low contrast for somes users, especially users with low vision.
