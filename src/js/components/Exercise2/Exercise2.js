@@ -27,8 +27,9 @@ const Exercise2 = () => {
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
-        setOriginalItems(data.media);
-        setFilteredItems(data.media);
+        const sortedMedia = data.media.sort((a, b) => (a.title > b.title ? 1 : -1));
+        setOriginalItems(sortedMedia);
+        setFilteredItems(sortedMedia);
       });
   }, []);
 
@@ -55,13 +56,13 @@ const Exercise2 = () => {
     const updatedItems = originalItems.filter((item) => {
       return filterKeys.every((key) => {
         // If the filter has no value, return true or "skip" it
-        // If the filter is an array, convert the item's value to lowercase and check if the filter contains that value
+        // If the filter is not an array, convert the item's value to lowercase and check if the filter contains the items value
         if (!filters[key].length) {
           return true; 
         } else if (!Array.isArray(filters[key])) {
           return item[key].toLowerCase().includes(filters[key].toLowerCase());
         }
-        // If the filter is not an array, check if the item's value includes the filter's value
+        // If the filter is an array, check if the item's value includes the filter's value
         return filters[key].some(filter => item[key].includes(filter));
       });
     });
