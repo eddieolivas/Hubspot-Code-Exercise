@@ -1,5 +1,7 @@
 # HubSpot Web Team Exercise - Instructions
 
+See my answer in action here: https://eddies-hubspot-exercise.netlify.app/
+
 Welcome to the HubSpot Web Team's coding exercise 👋
 
 Make sure you read these instructions carefully before you start. If you have any questions please reach out to your recruiting specialist.
